@@ -6,5 +6,6 @@ The name is a pun btw<br>
 What happens when you get scratched by something rusty?<br>
 Exactly<br>
 I am not providing binaries<br>
-If you do not know how to compile this project, it is most likely not for you
+If you do not know how to compile this project, it is most likely not for you<br>
+Also this code isn't my best as its my first project in Rust
 </p>
