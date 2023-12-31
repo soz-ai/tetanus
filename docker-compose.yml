@@ -1,0 +1,6 @@
+version: '3'
+services:
+  main:
+    build: .
+    volumes:
+      - </path/to/pastes>:/app/pastes
