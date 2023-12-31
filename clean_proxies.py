@@ -1,19 +1,13 @@
-if __name__ == '__main__':
-    abc = 'qwertyuiop[]\\' 
+input_file_path = 'proxies.txt'
+output_file_path = 'cleaned_proxies.txt'
 
-    with open('proxies.txt', 'r') as f:
-        dirty_proxies = f.readlines()
-        clean_proxies = f.readlines()
+with open(input_file_path, 'r') as input_file:
+    proxy_list = input_file.read()
 
-    for i in clean_proxies:
-        for ii in i:
-            if ii in abc:
-                i = i.replace(ii, '')
+proxy_lines = proxy_list.strip().split('\n')
 
-    with open('proxies_dirty.txt', 'w') as f:
-        for i in dirty_proxies:
-            f.write(i)
+cleaned_proxies = [line.split()[0] for line in proxy_lines]
 
-    with open('proxies.txt', 'w') as f:
-        for i in clean_proxies:
-            f.write(i)
+with open(output_file_path, 'w') as output_file:
+    for proxy in cleaned_proxies:
+        output_file.write(f"{proxy}\n")

@@ -1041,16 +1041,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "rusty_web"
-version = "0.1.0"
-dependencies = [
- "colored",
- "rand 0.8.5",
- "reqwest",
- "scraper",
-]
-
-[[package]]
 name = "ryu"
 version = "1.0.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1281,6 +1271,16 @@ dependencies = [
  "futf",
  "mac",
  "utf-8",
+]
+
+[[package]]
+name = "tetanus"
+version = "0.1.0"
+dependencies = [
+ "colored",
+ "rand 0.8.5",
+ "reqwest",
+ "scraper",
 ]
 
 [[package]]
